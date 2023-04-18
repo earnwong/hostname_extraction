@@ -8,12 +8,12 @@ It is designed to handle large datasets, having been tested on datasets with ove
 # Getting Started
 To use the Hostname Extraction Tool, follow these steps:
 
-Clone the repository: git clone https://github.com/your_username/your_project.git.
-Install the required packages: pip install -r requirements.txt.
-Run the migrations: python manage.py migrate.
-Start the development server: python manage.py runserver.
-Open your web browser and go to http://localhost:8000/.
-Upload a CSV file containing the Nessus data you want to extract and clean.
-Wait for the tool to extract and filter the data, then check the MySQL database to see the results.
+- Clone the repository: git clone https://github.com/your_username/your_project.git.
+- Install the required packages: pip install -r requirements.txt.
+- Run the migrations: python manage.py migrate.
+- Start the development server: python manage.py runserver.
+- Open your web browser and go to http://localhost:8000/.
+- Upload a CSV file containing the Nessus data you want to extract and clean.
+- Wait for the tool to extract and filter the data, an output file will automatically download, check the MySQL database to see the results.
 
 Note that in the cleandata.py file, there is a line that specifies the MySQL database that the extracted and filtered data will be loaded into. You will need to change this line to specify your own MySQL database.
