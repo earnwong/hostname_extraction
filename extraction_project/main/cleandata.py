@@ -197,7 +197,7 @@ def isreadable(filename):
     :return: null
     """
     try:
-        with open(filename) as f:
+        with open(filename, 'r', encoding='utf-8') as f:
             f.read()
     except IOError as x:
         if x.errno == errno.ENOENT:
@@ -211,6 +211,7 @@ def isreadable(filename):
             
 
 def clean_data(input_file_path, output_file_path):
+    # this has to be replaced with your mysql database info
     engine = create_engine('mysql+pymysql://username:password@localhost/extractedcomputernames')
 
     new_dataframes = {}
