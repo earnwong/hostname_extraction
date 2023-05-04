@@ -2,6 +2,24 @@
 
 {% block content %}
   <h2>Upload your file</h2>
+  <ul>
+    <li>Tool Name: Hostname Extraction Tool</li>
+    <li>Function: Data transformation and filtering tool</li>
+    <li>Purpose: Extract alternative and valid hostnames</li>
+    <li>Source Data: Nessus data in CSV format</li>
+    <li>Expected Format of Nessus Data:
+      <ul>
+        <li>Risk</li>
+        <li>Host</li>
+        <li>Protocol</li>
+        <li>Port</li>
+        <li>Name</li>
+        <li>Plugin Output</li>
+      </ul>
+    </li>
+    <li>Specificity: Designed to work with Nessus data</li>
+    <li>Output: List of alternative and valid hostnames and automatically uploaded to a MySQL database</li>
+  </ul>
 
   {% if error_message %}
   <p class="error_message">{{ error_message }}</p>

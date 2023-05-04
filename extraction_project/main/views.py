@@ -7,6 +7,8 @@ from .utils import process_file
 from .cleandata import InvalidFileError
 import os
 from django.conf import settings
+from django.contrib import messages
+
 
 def clear_temp_directory(temp_directory):
     for file in os.listdir(temp_directory):
